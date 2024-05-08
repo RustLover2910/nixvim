@@ -3,7 +3,7 @@
 in {
   colorschemes = {
     base16 = {
-      enable = true;
+      enable = false;
       setUpBar = false;
       colorscheme = import ../../colors/${config.theme}.nix {};
     };
@@ -80,11 +80,11 @@ in {
       };
     };
     catppuccin = {
-      enable = false;
+      enable = true;
       settings = {
         background = {
           light = "macchiato";
-          dark = "mocha";
+          dark = "frappe";
         };
         flavour = "frappe"; # "latte", "mocha", "frappe", "macchiato" or raw lua code
         disableBold = false;
